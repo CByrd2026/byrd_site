@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Charlice Byrd voting against Cherokee County — District 20",
   description:
-    "Charlice Byrd has consistantly voted against Cherokee County.  Time for someone new for State House in District 20. Learn about her work to fight against education, healthcare, and working families.",
+    "Charlice Byrd a vote against Cherokee County.  Time for someone new for State House in District 20. Learn about her work to fight against education, healthcare, and working families.",
 };
 
 export default function RootLayout({
