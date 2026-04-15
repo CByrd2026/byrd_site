@@ -125,32 +125,62 @@ function Hero() {
 /* ─── ABOUT ─── */
 function About() {
   return (
-    <section id="about" className="py-24 bg-white">
+    <section id="about" className="py-24 bg-neutral-light">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-4xl font-extrabold text-primary mb-8 text-center">Meet the <span className="text-accent underline italic">REAL</span> Charlice</h2>
+        <h2 className="text-4xl font-extrabold text-primary mb-8 text-center tracking-tight">Meet the <span className="text-accent underline italic">REAL</span> Charlice</h2>
 
-        <div className="grid md:grid-cols-[1fr_40px_2px_20px_1fr] gap-y-8 items-start">
-          {/* Left column — evidence */}
-          <div className="space-y-8">
-            {/* Video */}
-            <div>
-              <div className="w-full aspect-video rounded-2xl overflow-hidden bg-black/10 border-2 border-neutral-mid">
-                <video
-                  className="w-full h-full object-cover"
-                  src="/videos/CB_RINO_Wrangler.mp4"
-                  controls
-                  playsInline
-                  preload="metadata"
-                />
-              </div>
-              <p className="text-center text-sm font-bold text-primary mt-3 tracking-wide uppercase">Actual Footage</p>
-              <p className="text-center text-foreground/70 mt-2">When the people of House District 20 needed a leader to stand up to Fani Willis, Charlice stepped forward—centering her efforts on the fundraising opportunity, using a now defunct organization to create high-visibility video content to amplify calls for a special session and impeachment.</p>
+        <div className="space-y-5 text-lg leading-relaxed text-foreground/80">
+          <p>
+            Charlice Byrd has built her political identity on a form of &ldquo;conservatism&rdquo; so uncompromising it often places her at odds with her own Republican caucus&mdash;demonstrating how positions taken to the farthest edge can begin to resemble those on the opposite end.
+          </p>
+          <p>
+            That philosophy was on full display this session in her vote on the amended and regular state budgets, where <strong><em>she joined Georgia&apos;s only self-proclaimed &ldquo;Democratic Socialist&rdquo; in opposition</em></strong>&mdash;standing against legislation that delivered immediate tax relief, invested in local road infrastructure to reduce the time our community spends in traffic, and directed millions in funding, including support for Cherokee County homeless veterans living in substandard conditions. She makes her position clear&mdash;Cherokee taxpayer dollars are best redistributed throughout the rest of the state rather than brought back home.
+          </p>
+          <p>
+            Locally in Cherokee, that approach continues to deliver a uniquely independent path forward. She has consistently stood with local government in support of high-density annexations&mdash;against the otherwise unified Cherokee State Delegation&mdash;before reversing course after public attention and constituent activism intensified, demonstrating a highly responsive approach when her decision-making enters the public eye.
+          </p>
+          <p>
+            Her commitment to issue-based activism has been equally consistent. After relentlessly advancing calls for the impeachment of Fani Willis in support of her fundraising efforts, she later opposed the creation of a prosecutorial oversight commission designed to address those same concerns&mdash;demonstrating a disciplined ability to recalibrate as momentum evolves and donations dry up.
+          </p>
+          <p>
+            Ultimately, the citizens of District 20 deserve a principled but pragmatic conservative&mdash;Not one committed to go to any length in raising funds then flip-flopping when the public attention is directed their way.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ─── CHARLICE AND FANI ─── */
+function CharliceAndFani() {
+  return (
+    <section className="py-24 bg-white">
+      <div className="max-w-6xl mx-auto px-6">
+        <h2 className="text-4xl font-extrabold text-primary mb-8 text-center">Charlice and Fani <span className="text-accent underline italic">EXPOSED</span></h2>
+
+        <div className="grid md:grid-cols-2 gap-12 items-start">
+          {/* Left column — Photo and caption */}
+          <div>
+            <div className="w-full rounded-2xl overflow-hidden border-2 border-neutral-mid">
+              <video
+                className="w-full h-full object-cover"
+                src="/videos/the_grift.mp4"
+                controls
+                playsInline
+                preload="metadata"
+                poster="/images/the_grift_poster.jpg"
+              />
             </div>
+            <h3 className="text-center text-primary font-extrabold text-2xl mt-4 mb-2">THE BIG GRIFT</h3>
+            <p className="text-center text-foreground/70 mt-2">When the people of House District 20 needed a leader to stand up to Fani Willis, Charlice stepped forward&mdash;centering her efforts on the fundraising opportunity, using a now defunct organization to create high-visibility video content to amplify calls for a special session and impeachment.  Then she voted against the real solution.</p>
+          </div>
 
+          {/* Right column — Fox News + Vote Records */}
+          <div className="space-y-8">
             {/* Fox News Article image */}
             <div>
               <a href="https://www.foxnews.com/politics/georgia-house-votes-to-revive-prosecutor-oversight-panel-that-could-oust-fani-willis" target="_blank" rel="noopener noreferrer" className="block">
-                <div className="w-full h-48 aspect-video rounded-2xl overflow-hidden border-2 border-neutral-mid hover:opacity-90 transition-opacity">
+                <div className="w-full h-48 rounded-2xl overflow-hidden border-2 border-neutral-mid hover:opacity-90 transition-opacity">
                   <img
                     src="/images/foxnews_poc_sb92.png"
                     alt="Fox News Article about POC"
@@ -158,12 +188,11 @@ function About() {
                   />
                 </div>
               </a>
-              <p className="text-center text-foreground/70 mt-2">After demanding accountability, Charlice opposed the oversight commission designed to deliver it—demonstrating a willingness to reach across the isle and address unresolved concerns.</p>
+              <p className="text-center text-foreground/70 mt-4">After demanding accountability, Charlice opposed the oversight commission designed to deliver it&mdash;demonstrating a willingness to reach across the isle and address unresolved concerns.</p>
             </div>
 
             {/* Vote Records - Two Column */}
             <div className="grid grid-cols-2 gap-6">
-
               {/* HB 881 Vote */}
               <a href="https://www.legis.ga.gov/legislation/65965" target="_blank" rel="noopener noreferrer" className="block hover:opacity-80 transition-opacity">
                 <div className="w-full aspect-[3/4] rounded-2xl overflow-hidden border-2 border-neutral-mid bg-white">
@@ -188,36 +217,10 @@ function About() {
                 <p className="text-center text-sm font-bold text-primary mt-3 tracking-wide uppercase underline">SB 92</p>
               </a>
             </div>
-            <p className="text-center text-foreground/70 mt-4">In two separate opportunities—SB 92 and HB 881—Charlice stood as the lone Republican to oppose the measure, she's a balanced leader who knows how keep favor with the Democrats and Fani Willis while continuing to prioritize disinformation to her base in support of her fundraising interests.</p>
-           </div>
-
-
-          {/* Spacer */}
-          <div className="hidden md:block" />
-          {/* Red divider */}
-          <div className="hidden md:block bg-accent rounded-full self-stretch" />
-          {/* Spacer */}
-          <div className="hidden md:block" />
-
-          {/* Right column — text */}
-          <div className="space-y-5 text-lg leading-relaxed text-foreground/80 text-right">
-            <p>
-              Charlice Byrd has built her political identity on a form of "conservatism" so uncompromising it often places her at odds with her own Republican caucus&mdash;demonstrating how positions taken to the farthest edge can begin to resemble those on the opposite end.
-            </p>
-            <p>
-              That philosophy was on full display this session in her vote on the amended and regular state budgets, where <strong><em>she joined Georgia&apos;s only self-proclaimed &ldquo;Democratic Socialist&rdquo; in opposition</em></strong>&mdash;standing against legislation that delivered immediate tax relief, invested in local road infrastructure to reduce the time our community spends in traffic, and directed millions in funding, including support for Cherokee County homeless veterans living in substandard conditions. She makes her position clear&mdash;Cherokee taxpayer dollars are best redistributed throughout the rest of the state rather than brought back home.
-            </p>
-            <p>
-              Locally in Cherokee, that approach continues to deliver a uniquely independent path forward. She has consistently stood with local government in support of high-density annexations&mdash;against the otherwise unified Cherokee State Delegation&mdash;before reversing course after public attention and constituent activism intensified, demonstrating a highly responsive approach when her decision-making enters the public eye.
-            </p>
-            <p>
-              Her commitment to issue-based activism has been equally consistent. After relentlessly advancing calls for the impeachment of Fani Willis in support of her fundraising efforts, she later opposed the creation of a prosecutorial oversight commission designed to address those same concerns&mdash;demonstrating a disciplined ability to recalibrate as momentum evolves and donations dry up.
-            </p>
-            <p>
-              Ultimately, the citizens of District 20 deserve a principled but pragmatic conservative&mdash;Not one committed to go to any length in raising funds then flip-flopping when the public attention is directed their way.
-            </p>
           </div>
         </div>
+
+        <p className="text-center text-foreground/70 mt-8 max-w-3xl mx-auto font-bold">In two separate opportunities&mdash;SB 92 and HB 881&mdash;Charlice stood as the lone Republican to oppose the measure, she&apos;s a balanced leader who knows how keep favor with the Democrats and Fani Willis while continuing to prioritize disinformation to her base in support of her fundraising interests.</p>
       </div>
     </section>
   );
@@ -588,6 +591,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
+      <CharliceAndFani />
       <Issues />
 
       <Footer />
