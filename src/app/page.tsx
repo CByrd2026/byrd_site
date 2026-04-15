@@ -240,7 +240,7 @@ const issues = [
         date: "3/31/2026",
         flipFlop: false,
         featured: true,
-        tags: ["Pro Teacher"],
+        tags: ["Teacher Bill"],
         description: "Expands the teacher recruitment and retention tax credit program to increase the number of teachers eligible to participate. Vote #794.",
       },
       {
@@ -249,7 +249,7 @@ const issues = [
         date: "2/24/2026",
         flipFlop: true,
         featured: true,
-        tags: ["Pro Education"],
+        tags: ["Education Bill"],
         description: "The largest education investment since HOPE \u2014 funding literacy coaches in every public school so all students read at grade level by 3rd grade. Charlice voted NO, then flip-flopped to YES on 3/31 \u2014 but voted NO on HB 974, the bill that actually funds the coaches.",
       },
       {
@@ -257,7 +257,7 @@ const issues = [
         bill: "HB 1413",
         date: "3/6/2026",
         flipFlop: false,
-        tags: ["Pro Education"],
+        tags: ["Education Bill"],
         description: "Georgia\u2019s first needs-based scholarship program for students at eligible public and private postsecondary institutions.",
       },
       {
@@ -265,7 +265,7 @@ const issues = [
         bill: "SB 556",
         date: "4/2/2026",
         flipFlop: false,
-        tags: ["Pro Education", "Pro Healthcare"],
+        tags: ["Education Bill", "Healthcare Bill"],
         description: "Incorporates the DREAM Scholarship Act, allows advanced fine arts to count toward HOPE, and provides scholarships for medical school students. Vote #842.",
       },
       {
@@ -273,7 +273,7 @@ const issues = [
         bill: "HB 1396",
         date: "4/2/2026",
         flipFlop: false,
-        tags: ["Pro Child Safety"],
+        tags: ["Child Safety Bill"],
         description: "Cursive writing, age-appropriate digital literacy, financial literacy for high schoolers, weapons detection in schools, and clean-up language for Ricky and Alyssa\u2019s Law mobile panic alert system. Vote #851.",
       },
       {
@@ -281,7 +281,7 @@ const issues = [
         bill: "HB 1402",
         date: "3/4/2026",
         flipFlop: false,
-        tags: ["Pro Child Healthcare"],
+        tags: ["Child Healthcare Bill"],
         description: "Vision and hearing screenings for all public school students in pre-K through 3rd grade to identify problems early so students can learn effectively. Includes parent notification and an opt-out option. Charlice was the only NO vote.",
       },
     ],
@@ -302,7 +302,7 @@ const issues = [
         date: "3/6/2025",
         flipFlop: false,
         featured: true,
-        tags: ["Pro Consumer Protections"],
+        tags: ["Consumer Protections Bill"],
         description: "The Surprise Billing Consumer Protection Act \u2014 insurance coverage for out-of-network ambulance transportation. Moved into HB 506 for final passage, where she voted NO again on 4/2/2026.",
       },
       {
@@ -310,7 +310,7 @@ const issues = [
         bill: "HB 943",
         date: "2/18/2026",
         flipFlop: true,
-        tags: ["Pro Child Healthcare"],
+        tags: ["Child Healthcare Bill"],
         description: "Pilot program to screen all foster children for autism, provide necessary treatments, and ensure proper placement. Incorporated into SB 402. She flip-flopped to YES on 3/31/2026.",
       },
       {
@@ -319,7 +319,7 @@ const issues = [
         date: "2/18/2026",
         flipFlop: false,
         featured: true,
-        tags: ["Pro Healthcare Workforce"],
+        tags: ["Healthcare Workforce Bill"],
         description: "Expands approved nursing program schools eligible for tuition equalization grants to address Georgia\u2019s nursing shortage. She was the only NO vote.",
       },
       {
@@ -327,7 +327,7 @@ const issues = [
         bill: "HB 1368",
         date: "3/4/2026",
         flipFlop: false,
-        tags: ["Pro Mental Health"],
+        tags: ["Mental Health Bill"],
         description: "Establishes community service boards for public mental health, developmental disabilities, and addictive diseases.",
       },
       {
@@ -335,7 +335,7 @@ const issues = [
         bill: "HB 1295",
         date: "3/4/2026",
         flipFlop: false,
-        tags: ["Pro Healthcare Workforce"],
+        tags: ["Healthcare Workforce Bill"],
         description: "Allows physician assistants to enter an interstate compact for easier licensing across states, helping address PA shortages.",
       },
       {
@@ -343,7 +343,7 @@ const issues = [
         bill: "HB 1138",
         date: "3/4/2026",
         flipFlop: false,
-        tags: ["Pro Women\u2019s Health"],
+        tags: ["Women\u2019s Health Bill"],
         description: "Allows pharmacists to dispense hormonal contraceptives in up to 12-month supplies, joining 30 other states. Critical for rural areas \u2014 60 Georgia counties lack an OBGYN. She voted NO again on final passage 4/2/2026, vote #874.",
       },
       {
@@ -352,7 +352,7 @@ const issues = [
         date: "4/2/2026",
         flipFlop: false,
         featured: true,
-        tags: ["Pro Abandoned Children"],
+        tags: ["Abandoned Children Bill"],
         description: "Addresses children abandoned at hospitals and mental facilities by engaging the MATCH program to connect with family, guardians, and service providers to meet children\u2019s needs. Vote #852.",
       },
     ],
@@ -372,7 +372,7 @@ const issues = [
         date: "2/5/2026",
         flipFlop: false,
         featured: true,
-        tags: ["Pro Tax Relief", "Pro Veterans"],
+        tags: ["Tax Relief Bill", "Veterans Bill"],
         description: "Includes $850 million in homeowner tax relief grants to reduce property taxes and $5.5 million for Veteran Homelessness Support Programs.",
       },
       {
@@ -381,7 +381,7 @@ const issues = [
         date: "3/10/2026",
         flipFlop: false,
         featured: true,
-        tags: ["Pro Infrastructure", "Pro Cherokee County"],
+        tags: ["Infrastructure Bill", "Cherokee County Bill"],
         description: "Millions in infrastructure and grants for counties and cities statewide. Her NO vote means other representatives and senators must work harder to secure necessary funds for Cherokee County. Vote #694.",
       },
       {
@@ -389,7 +389,7 @@ const issues = [
         bill: "HB 945",
         date: "2/6/2026",
         flipFlop: false,
-        tags: ["Pro Elder Protection"],
+        tags: ["Elder Protection Bill"],
         description: "Establishes holds on accounts of eligible adults suspected of financial exploitation, includes training to recognize exploitation, and permits contact with a trusted individual.",
       },
       {
@@ -397,7 +397,7 @@ const issues = [
         bill: "HB 1344",
         date: "2/26/2026",
         flipFlop: false,
-        tags: ["Pro Consumer Protections"],
+        tags: ["Consumer Protections Bill"],
         description: "Strengthens enforcement against insurance fraud, enforces uninsured motorist laws, and implements the Fortified Homes Program to protect homes against storm damage. She voted NO again on final passage 4/2/2026, vote #860.",
       },
     ],
@@ -417,7 +417,7 @@ const issues = [
         date: "2026",
         flipFlop: false,
         featured: true,
-        tags: ["Pro Legal Reform"],
+        tags: ["Legal Reform Bill"],
         description: "Governor Kemp\u2019s signature legislation to reform tort litigation, level the playing field in Georgia\u2019s courtrooms, increase insurance market competition, and protect civil liability. Vote #534.",
       },
       {
@@ -425,7 +425,7 @@ const issues = [
         bill: "SB 63",
         date: "2026",
         flipFlop: false,
-        tags: ["Pro Public Safety"],
+        tags: ["Public Safety Bill"],
         description: "Makes it harder for criminals to get out of jail by requiring a bond for violent criminals. Vote #429.",
       },
       {
@@ -434,7 +434,7 @@ const issues = [
         date: "2026",
         flipFlop: false,
         featured: true,
-        tags: ["Pro Accountability"],
+        tags: ["Accountability Bill"],
         description: "Creates a prosecuting attorney\u2019s oversight commission to ensure prosecutors don\u2019t ignore laws they don\u2019t like \u2014 i.e., Fani Willis. Vote #308.",
       },
       {
@@ -442,7 +442,7 @@ const issues = [
         bill: "SB 44",
         date: "2026",
         flipFlop: false,
-        tags: ["Pro Public Safety"],
+        tags: ["Public Safety Bill"],
         description: "Provides mandatory minimum penalties for violations of the Street Gang Terrorism Prevention Act. Vote #258.",
       },
       {
@@ -451,7 +451,7 @@ const issues = [
         date: "2026",
         flipFlop: true,
         featured: true,
-        tags: ["Pro Child Safety"],
+        tags: ["Child Safety Bill"],
         description: "Provides penalties for distributing AI-generated obscene material depicting children. Vote #645.",
       },
     ],
@@ -483,7 +483,7 @@ function Issues() {
                   {issue.bills.map((b: any) => (
                     <div key={b.bill} className={`border-l-4 pl-4 flex gap-3 ${b.featured ? "border-primary bg-primary/5 rounded-r-xl py-3 pr-3 -ml-0" : "border-accent"}`}>
                       <div className="shrink-0 flex items-center">
-                        <span className="bg-accent text-white font-extrabold text-sm px-2 py-1 rounded">NO</span>
+                        <span className="bg-accent text-white font-extrabold text-[10px] leading-tight px-2 py-1 rounded text-center w-14">Charlice Voted No</span>
                       </div>
                       <div className="flex-1 min-w-0">
                         <div className="flex items-center gap-2 flex-wrap">
