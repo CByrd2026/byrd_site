@@ -214,7 +214,7 @@ function About() {
               Her commitment to issue-based activism has been equally consistent. After relentlessly advancing calls for the impeachment of Fani Willis in support of her fundraising efforts, she later opposed the creation of a prosecutorial oversight commission designed to address those same concerns&mdash;demonstrating a disciplined ability to recalibrate as momentum evolves and donations dry up.
             </p>
             <p>
-              Ultimately, the citizens of District 20 deserve an unwavering, principled conservative&mdash;one committed to go to any length in raising funds but maintaining the flexibility to adjust direction when the public attention is directed their way.
+              Ultimately, the citizens of District 20 deserve principled but pragmatic conservative&mdash;Not one committed to go to any length in raising funds the flip-flopping when the public attention is directed their way.
             </p>
           </div>
         </div>
@@ -461,7 +461,7 @@ const issues = [
 function Issues() {
   return (
     <section id="issues" className="py-24 bg-neutral-light">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-[94rem] mx-auto px-6">
         <h2 className="text-4xl font-extrabold text-primary mb-2 text-center">Key <span className="text-accent">&ldquo;NO&rdquo;</span> Votes</h2>
         <div className="w-20 h-1 bg-accent rounded mx-auto mb-4" />
         <p className="text-center text-foreground/60 max-w-2xl mx-auto mb-14">
