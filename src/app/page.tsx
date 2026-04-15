@@ -180,7 +180,7 @@ function About() {
               <a href="https://www.legis.ga.gov/legislation/64008" target="_blank" rel="noopener noreferrer" className="block hover:opacity-80 transition-opacity">
                 <div className="w-full aspect-[3/4] rounded-2xl overflow-hidden border-2 border-neutral-mid bg-white">
                   <img
-                    src="/images/AI_Deepfakes_Vote.png"
+                    src="/images/poc_house_vote_for_passage.png"
                     alt="SB 92 House Vote Record"
                     className="w-full h-full object-contain object-top"
                   />
