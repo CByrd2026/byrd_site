@@ -188,7 +188,7 @@ function About() {
                 <p className="text-center text-sm font-bold text-primary mt-3 tracking-wide uppercase underline">SB 92</p>
               </a>
             </div>
-            <p className="text-center text-foreground/70 mt-4">In two separate opportunities—SB 92 and HB 881—Charlice stood as the lone Republican to oppose the measure, she's a balanced leader who knows how keep favor with the Democrats and Fani Willis while continuing to prioritize fringe right interests.</p>
+            <p className="text-center text-foreground/70 mt-4">In two separate opportunities—SB 92 and HB 881—Charlice stood as the lone Republican to oppose the measure, she's a balanced leader who knows how keep favor with the Democrats and Fani Willis while continuing to prioritize disinformation to her base in support of her fundraising interests.</p>
            </div>
 
 
@@ -214,7 +214,7 @@ function About() {
               Her commitment to issue-based activism has been equally consistent. After relentlessly advancing calls for the impeachment of Fani Willis in support of her fundraising efforts, she later opposed the creation of a prosecutorial oversight commission designed to address those same concerns&mdash;demonstrating a disciplined ability to recalibrate as momentum evolves and donations dry up.
             </p>
             <p>
-              Ultimately, the citizens of District 20 deserve principled but pragmatic conservative&mdash;Not one committed to go to any length in raising funds the flip-flopping when the public attention is directed their way.
+              Ultimately, the citizens of District 20 deserve a principled but pragmatic conservative&mdash;Not one committed to go to any length in raising funds then flip-flopping when the public attention is directed their way.
             </p>
           </div>
         </div>
