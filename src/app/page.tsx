@@ -89,11 +89,11 @@ function Hero() {
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight text-center md:text-left">
             A Reliable Voice<br />for <span className="text-accent-light" style={{ WebkitTextStroke: "3px var(--primary)", paintOrder: "stroke fill", textShadow: "0 0 8px rgba(0,0,0,0.6), 0 2px 4px rgba(0,0,0,0.4)" }}>the Fringe Right</span>
           </h1>
-            <ul className="mt-6 text-lg text-white/80 max-w-lg leading-relaxed space-y-2 list-disc list-inside">
-              <li className="text-white font-bold"><span className="text-accent-light font-extrabold text-xl" style={{ WebkitTextStroke: "2px var(--primary)", paintOrder: "stroke fill", textShadow: "0 0 8px rgba(0,0,0,0.6), 0 2px 4px rgba(0,0,0,0.4)" }}>Opposing</span> state budgets delivering millions in tax relief and financial support back home—ensuring Cherokee taxpayers money is equitably redistributed throughout Georgia</li>
-              <li className="text-white font-bold"><span className="text-accent-light font-extrabold text-xl" style={{ WebkitTextStroke: "2px var(--primary)", paintOrder: "stroke fill", textShadow: "0 0 8px rgba(0,0,0,0.6), 0 2px 4px rgba(0,0,0,0.4)" }}>Championing</span> local control over responsible development—thoughtfully reshaping growth and Cherokee residents quality of life while ensuring high density developers maintain a healthy bottom line; </li>
-              <li className="text-white font-bold"><span className="text-accent-light font-extrabold text-xl" style={{ WebkitTextStroke: "2px var(--primary)", paintOrder: "stroke fill", textShadow: "0 0 8px rgba(0,0,0,0.6), 0 2px 4px rgba(0,0,0,0.4)" }}>Taking High-Profile Positions</span> to drive engagement, then supporting different outcomes—she was the outlier fighting for Donald Trump when the fundraising opportunity was there, then stood squarely with the Democrats to protect Fani Willis proving she is willing to reach across the isle. </li>
-            </ul>
+            <div className="mt-6 text-lg text-white/80 max-w-lg leading-relaxed space-y-2">
+              <p className="text-white font-bold"><span className="text-accent-light font-extrabold text-xl" style={{ WebkitTextStroke: "2px var(--primary)", paintOrder: "stroke fill", textShadow: "0 0 8px rgba(0,0,0,0.6), 0 2px 4px rgba(0,0,0,0.4)" }}>Opposing</span> state budgets that delivered millions in tax relief and financial support back home&mdash;voting against returning Cherokee taxpayer dollars to the community</p>
+              <p className="text-white font-bold"><span className="text-accent-light font-extrabold text-xl" style={{ WebkitTextStroke: "2px var(--primary)", paintOrder: "stroke fill", textShadow: "0 0 8px rgba(0,0,0,0.6), 0 2px 4px rgba(0,0,0,0.4)" }}>Championing</span> high-density development alongside local government&mdash;before reversing course once constituents pushed back</p>
+              <p className="text-white font-bold"><span className="text-accent-light font-extrabold text-xl" style={{ WebkitTextStroke: "2px var(--primary)", paintOrder: "stroke fill", textShadow: "0 0 8px rgba(0,0,0,0.6), 0 2px 4px rgba(0,0,0,0.4)" }}>Taking high-profile positions</span> on issues like impeaching Fani Willis&mdash;then voting against the very oversight commission designed to hold her accountable</p>
+            </div>
           <div className="mt-8 mb-8 flex flex-wrap gap-4 justify-center md:justify-start">
             <a
               href="#issues"
@@ -131,19 +131,19 @@ function About() {
 
         <div className="space-y-5 text-lg leading-relaxed text-foreground/80">
           <p>
-            Charlice Byrd has built her political identity on a form of &ldquo;conservatism&rdquo; so uncompromising it often places her at odds with her own Republican caucus&mdash;demonstrating how positions taken to the farthest edge can begin to resemble those on the opposite end.
+            Charlice Byrd has built her political identity on a form of conservatism so uncompromising it often places her at odds with her own Republican caucus&mdash;at times aligning her positions with those on the opposite end of the political spectrum.
           </p>
           <p>
-            That philosophy was on full display this session in her vote on the amended and regular state budgets, where <strong><em>she joined Georgia&apos;s only self-proclaimed &ldquo;Democratic Socialist&rdquo; in opposition</em></strong>&mdash;standing against legislation that delivered immediate tax relief, invested in local road infrastructure to reduce the time our community spends in traffic, and directed millions in funding, including support for Cherokee County homeless veterans living in substandard conditions. She makes her position clear&mdash;Cherokee taxpayer dollars are best redistributed throughout the rest of the state rather than brought back home.
+            That dynamic was on full display this session in her votes on the amended and regular state budgets, where <strong><em>she joined Georgia&apos;s only self-proclaimed &ldquo;Democratic Socialist&rdquo; in opposition</em></strong>&mdash;voting against legislation that delivered immediate tax relief here at home, invested in local road infrastructure to reduce the time our community spends in traffic, and directed millions in funding, including support for Cherokee County homeless veterans living in substandard conditions. These decisions raise serious questions about her commitment to prioritizing Cherokee taxpayer dollars being returned home rather than redistributed to other counties.
           </p>
           <p>
-            Locally in Cherokee, that approach continues to deliver a uniquely independent path forward. She has consistently stood with local government in support of high-density annexations&mdash;against the otherwise unified Cherokee State Delegation&mdash;before reversing course after public attention and constituent activism intensified, demonstrating a highly responsive approach when her decision-making enters the public eye.
+            Locally in Cherokee, this pattern has also been evident. She has supported local government efforts for high-density annexations&mdash;opposing the otherwise unified Cherokee State Delegation&mdash;before reversing course after significant public attention and constituent feedback. This shift highlights a pattern of changing positions in response to public pressure rather than consistent policy direction.
           </p>
           <p>
-            Her commitment to issue-based activism has been equally consistent. After relentlessly advancing calls for the impeachment of Fani Willis in support of her fundraising efforts, she later opposed the creation of a prosecutorial oversight commission designed to address those same concerns&mdash;demonstrating a disciplined ability to recalibrate as momentum evolves and donations dry up.
+            Her approach to high-profile issues follows a similar trajectory. After strongly advocating for the impeachment of Fani Willis, she later opposed the creation of a prosecutorial oversight commission designed to address those same concerns. This raises questions about whether these efforts were intended to produce results or primarily to generate attention and support.
           </p>
           <p>
-            Ultimately, the citizens of District 20 deserve a principled but pragmatic conservative&mdash;Not one committed to go to any length in raising funds then flip-flopping when the public attention is directed their way.
+            Ultimately, the citizens of District 20 deserve a principled and pragmatic conservative&mdash;one who delivers consistent leadership and prioritizes results over attention or shifting positions in response to public pressure.
           </p>
         </div>
       </div>
@@ -554,7 +554,7 @@ function AiBanner() {
             Artificial Intelligence systems have been used to create some of the content on this page.
           </p>
           <p className="text-primary/60 text-xs md:text-sm mt-1">
-            Of course, we really shouldn&apos;t be concerned&mdash;after all, Charlice voted against measures that would have made the use of AI-generated deepfakes of elected officials in campaign materials illegal.
+            Of Course &mdash; Charlice also voted against measures to prohibit AI-generated deepfakes of elected officials in campaign materials and to ban AI-generated obscene material depicting children&mdash;effectively allowing both to remain legal.
           </p>
         </div>
         <a
@@ -585,7 +585,7 @@ function AiBanner() {
 }
 
 /* ─── PAGE ─── */
-export default function Home() {
+export default function Page() {
   return (
     <>
       <Navbar />
@@ -593,7 +593,6 @@ export default function Home() {
       <About />
       <CharliceAndFani />
       <Issues />
-
       <Footer />
       <AiBanner />
     </>
