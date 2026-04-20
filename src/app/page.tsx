@@ -64,7 +64,7 @@ function Hero() {
     <section className="relative min-h-[85vh] flex items-center bg-gradient-to-br from-primary via-primary-light to-primary pt-28 md:pt-20">
       {/* Background image - flipped horizontally with 80% transparency */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute inset-0 opacity-20" style={{ transform: 'scaleX(-1) translateY(30px)' }}>
+        <div className="absolute inset-0 opacity-20">
           <img
             src="/images/Charlice Cover Photo.jpg"
             alt=""
@@ -238,7 +238,7 @@ function CharliceAndFani() {
                   />
                 </div>
               </a>
-              <p className="text-center text-foreground/70 mt-4">After demanding accountability, Charlice opposed the oversight commission designed to deliver it&mdash;demonstrating a willingness to reach across the isle and address unresolved concerns.</p>
+              <p className="text-center text-foreground/70 mt-4">After demanding accountability, Charlice opposed the oversight commission designed to deliver it&mdash;demonstrating ensuring President Trump received her "NO" vote as well.</p>
             </div>
 
             {/* Vote Records - Two Column */}
