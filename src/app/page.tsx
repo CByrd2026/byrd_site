@@ -78,17 +78,15 @@ function Hero() {
       <div className="relative max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         <div>
           {/* Mobile video - shows above headline on small screens */}
-          <div className="md:hidden flex justify-center mb-6">
-            <div className="w-full max-w-lg rounded-2xl overflow-hidden bg-black/20 border-2 border-white/20">
-              <video
-                className="w-full aspect-video object-cover"
-                src="/videos/byrd_budget.mp4"
-                controls
-                playsInline
-                preload="metadata"
-                poster="/images/budget(3).png"
-              />
-            </div>
+          <div className="md:hidden mb-6">
+            <video
+              className="w-full rounded-2xl"
+              src="/videos/byrd_budget.mp4"
+              controls
+              playsInline
+              preload="metadata"
+              poster="/images/budget(3).png"
+            />
           </div>
 
           <p className="text-accent-light font-extrabold tracking-widest uppercase text-lg md:text-xl mb-3 text-center md:text-left" style={{ WebkitTextStroke: "2px var(--primary)", paintOrder: "stroke fill", textShadow: "0 0 8px rgba(0,0,0,0.6), 0 2px 4px rgba(0,0,0,0.4)" }}>
