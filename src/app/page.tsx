@@ -99,19 +99,7 @@ function Hero() {
           </div>
         </div>
 
-        {/* Candidate intro video */}
-        <div className="hidden md:flex justify-center items-start" style={{ marginTop: "-400px" }}>
-          <div className="w-full aspect-video rounded-2xl overflow-hidden bg-black/20 border-2 border-white/20">
-            <video
-              className="w-full h-full object-cover"
-              src="/videos/byrd_budget.mp4"
-              controls
-              playsInline
-              preload="metadata"
-              poster="/images/budget(3).png"
-            />
-          </div>
-        </div>
+        {/* DIAGNOSTIC: desktop video temporarily removed to test duplicate-video fullscreen hypothesis */}
       </div>
     </section>
   );
