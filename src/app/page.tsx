@@ -61,12 +61,12 @@ function Navbar() {
 /* ─── HERO ─── */
 function Hero() {
   return (
-    <section className="relative min-h-[85vh] flex items-center bg-gradient-to-br from-primary via-primary-light to-primary pt-28 md:pt-20">
-      {/* Background image - flipped horizontally with 80% transparency */}
+    <section className="relative pt-28 md:pt-20 pb-24 bg-primary">
+      {/* Background image - pre-flipped horizontally, 80% transparency */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
+        <div className="absolute inset-0 opacity-20" style={{ top: "30px" }}>
           <img
-            src="/images/Charlice Cover Photo.jpg"
+            src="/images/Charlice Cover Photo Flipped.jpg"
             alt=""
             className="w-full h-full object-cover"
           />
@@ -78,18 +78,15 @@ function Hero() {
       <div className="relative max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         <div>
           {/* Mobile video - shows above headline on small screens */}
-          {/* DIAGNOSTIC: src/poster swapped with Fani video to test if bug is section-based */}
           <div className="md:hidden mb-6">
-            <div className="w-full rounded-2xl overflow-hidden border-2 border-neutral-mid">
-              <video
-                className="w-full h-full object-cover"
-                src="/videos/the_grift.mp4"
-                controls
-                playsInline
-                preload="metadata"
-                poster="/images/the_grift_poster.jpg"
-              />
-            </div>
+            <video
+              className="w-full rounded-2xl"
+              src="/videos/byrd_budget.mp4"
+              controls
+              playsInline
+              preload="metadata"
+              poster="/images/budget(3).png"
+            />
           </div>
 
           <p className="text-accent-light font-extrabold tracking-widest uppercase text-lg md:text-xl mb-3 text-center md:text-left" style={{ WebkitTextStroke: "2px var(--primary)", paintOrder: "stroke fill", textShadow: "0 0 8px rgba(0,0,0,0.6), 0 2px 4px rgba(0,0,0,0.4)" }}>
@@ -115,7 +112,7 @@ function Hero() {
 
         {/* Candidate intro video */}
         <div className="hidden md:flex justify-center items-start" style={{ marginTop: "-400px" }}>
-          <div className="w-full rounded-2xl overflow-hidden border-2 border-neutral-mid">
+          <div className="w-full aspect-video rounded-2xl overflow-hidden bg-black/20 border-2 border-white/20">
             <video
               className="w-full h-full object-cover"
               src="/videos/byrd_budget.mp4"
@@ -217,11 +214,11 @@ function CharliceAndFani() {
             <div className="w-full rounded-2xl overflow-hidden border-2 border-neutral-mid">
               <video
                 className="w-full h-full object-cover"
-                src="/videos/byrd_budget.mp4"
+                src="/videos/the_grift.mp4"
                 controls
                 playsInline
                 preload="metadata"
-                poster="/images/budget(3).png"
+                poster="/images/the_grift_poster.jpg"
               />
             </div>
             <h3 className="text-center text-primary font-extrabold text-2xl mt-4 mb-2">THE BIG GRIFT</h3>
