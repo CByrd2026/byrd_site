@@ -583,7 +583,7 @@ function Footer() {
           <div />
         </div>
         <div className="mt-10 pt-6 border-t border-white/10 text-center text-xs text-white/40">
-          <p>Paid for by Cherokee Citizens supporting the truth. Not authorized by any candidate or candidate&apos;s committee.</p>
+          <p>Paid for by Cherokee Citizens Supporting the Truth.  Not a PAC but actual Cherokee County Citizens exercising their 1st Amendment rights!!! Not authorized by any candidate or candidate&apos;s committee.</p>
         </div>
       </div>
     </footer>
