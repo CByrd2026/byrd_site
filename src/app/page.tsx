@@ -7,6 +7,7 @@ function Navbar() {
   const [open, setOpen] = useState(false); // still needed for mobile menu
   const links = [
     { label: "About", href: "#about" },
+    { label: "Fani", href: "#fani" },
     { label: "Key \"No\" Votes", href: "#issues" },
   ];
 
@@ -78,9 +79,9 @@ function Hero() {
         <div>
           {/* Mobile video - shows above headline on small screens */}
           <div className="md:hidden flex justify-center mb-6">
-            <div className="w-full max-w-lg h-72 rounded-2xl overflow-hidden bg-black/20 border-2 border-white/20">
+            <div className="w-full max-w-lg rounded-2xl overflow-hidden bg-black/20 border-2 border-white/20">
               <video
-                className="w-full h-full object-cover"
+                className="w-full aspect-video object-cover"
                 src="/videos/byrd_budget.mp4"
                 controls
                 playsInline
@@ -136,6 +137,38 @@ function About() {
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-4xl font-extrabold text-primary mb-8 text-center tracking-tight">Meet the <span className="text-accent underline italic">REAL</span> Charlice</h2>
 
+        {/* Four column image grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <div className="rounded-lg overflow-hidden border-4 border-primary shadow-lg">
+            <img
+              src="/images/homeless_veteran_she.png"
+              alt="Homeless Veteran"
+              className="w-full h-full object-cover brightness-125"
+            />
+          </div>
+          <div className="rounded-lg overflow-hidden border-4 border-accent shadow-lg">
+            <img
+              src="/images/teacher_no.png"
+              alt="Teacher"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="rounded-lg overflow-hidden border-4 border-primary shadow-lg">
+            <img
+              src="/images/Family No.png"
+              alt="Family"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="rounded-lg overflow-hidden border-4 border-accent shadow-lg">
+            <img
+              src="/images/P_F_too.png"
+              alt="Public Figure"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+
         <div className="space-y-5 text-lg leading-relaxed text-foreground/80">
           <p>
             Charlice Byrd has built her political identity on a form of conservatism so uncompromising it often places her at odds with her own Republican caucus&mdash;at times aligning her positions with those on the opposite end of the political spectrum.
@@ -161,8 +194,20 @@ function About() {
 /* ─── CHARLICE AND FANI ─── */
 function CharliceAndFani() {
   return (
-    <section className="py-24 bg-white">
-      <div className="max-w-6xl mx-auto px-6">
+    <section id="fani" className="relative py-24 bg-white">
+      {/* Background image */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <img
+            src="/images/Charlice and Fani.png"
+            alt=""
+            className="w-full h-full object-cover"
+            style={{ objectPosition: 'center -200px' }}
+          />
+        </div>
+      </div>
+
+      <div className="relative max-w-6xl mx-auto px-6">
         <h2 className="text-4xl font-extrabold text-primary mb-8 text-center">Charlice and Fani <span className="text-accent underline italic">EXPOSED</span></h2>
 
         <div className="grid md:grid-cols-2 gap-12 items-start">
