@@ -61,8 +61,15 @@ function Navbar() {
 function Hero() {
   return (
     <section className="relative min-h-[85vh] flex items-center bg-gradient-to-br from-primary via-primary-light to-primary pt-28 md:pt-20">
-      {/* Decorative shapes */}
+      {/* Background image - flipped horizontally with 80% transparency */}
       <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute inset-0 opacity-20" style={{ transform: 'scaleX(-1) translateY(30px)' }}>
+          <img
+            src="/images/Charlice Cover Photo.jpg"
+            alt=""
+            className="w-full h-full object-cover"
+          />
+        </div>
         <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-accent/10" />
         <div className="absolute bottom-12 -left-16 w-72 h-72 rounded-full bg-white/5" />
       </div>
@@ -74,11 +81,11 @@ function Hero() {
             <div className="w-full max-w-lg h-72 rounded-2xl overflow-hidden bg-black/20 border-2 border-white/20">
               <video
                 className="w-full h-full object-cover"
-                src="/videos/Byrd_No_Video.mp4"
+                src="/videos/byrd_budget.mp4"
                 controls
                 playsInline
                 preload="metadata"
-                poster="/images/byrd_no_video_poster.jpg"
+                poster="/images/budget(3).png"
               />
             </div>
           </div>
@@ -106,14 +113,14 @@ function Hero() {
 
         {/* Candidate intro video */}
         <div className="hidden md:flex justify-center items-start" style={{ marginTop: "-400px" }}>
-          <div className="w-full h-[28rem] rounded-2xl overflow-hidden bg-black/20 border-2 border-white/20">
+          <div className="w-full aspect-video rounded-2xl overflow-hidden bg-black/20 border-2 border-white/20">
             <video
               className="w-full h-full object-cover"
-              src="/videos/Byrd_No_Video.mp4"
+              src="/videos/byrd_budget.mp4"
               controls
               playsInline
               preload="metadata"
-              poster="/images/byrd_no_video_poster.jpg"
+              poster="/images/budget(3).png"
             />
           </div>
         </div>
