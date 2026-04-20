@@ -62,18 +62,7 @@ function Navbar() {
 function Hero() {
   return (
     <section className="relative pt-28 md:pt-20 pb-24 bg-primary">
-      {/* Background image - pre-flipped horizontally, 80% transparency */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute inset-0 opacity-20" style={{ top: "30px" }}>
-          <img
-            src="/images/Charlice Cover Photo Flipped.jpg"
-            alt=""
-            className="w-full h-full object-cover"
-          />
-        </div>
-        <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-accent/10" />
-        <div className="absolute bottom-12 -left-16 w-72 h-72 rounded-full bg-white/5" />
-      </div>
+      {/* DIAGNOSTIC: background overlay (image + circles) temporarily removed to test fullscreen */}
 
       <div className="relative max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         <div>
