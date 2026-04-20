@@ -78,15 +78,16 @@ function Hero() {
       <div className="relative max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         <div>
           {/* Mobile video - shows above headline on small screens */}
+          {/* DIAGNOSTIC: src/poster swapped with Fani video to test if bug is section-based */}
           <div className="md:hidden mb-6">
             <div className="w-full rounded-2xl overflow-hidden border-2 border-neutral-mid">
               <video
                 className="w-full h-full object-cover"
-                src="/videos/byrd_budget.mp4"
+                src="/videos/the_grift.mp4"
                 controls
                 playsInline
                 preload="metadata"
-                poster="/images/budget(3).png"
+                poster="/images/the_grift_poster.jpg"
               />
             </div>
           </div>
@@ -216,11 +217,11 @@ function CharliceAndFani() {
             <div className="w-full rounded-2xl overflow-hidden border-2 border-neutral-mid">
               <video
                 className="w-full h-full object-cover"
-                src="/videos/the_grift.mp4"
+                src="/videos/byrd_budget.mp4"
                 controls
                 playsInline
                 preload="metadata"
-                poster="/images/the_grift_poster.jpg"
+                poster="/images/budget(3).png"
               />
             </div>
             <h3 className="text-center text-primary font-extrabold text-2xl mt-4 mb-2">THE BIG GRIFT</h3>
