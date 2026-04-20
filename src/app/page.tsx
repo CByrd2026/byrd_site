@@ -62,14 +62,25 @@ function Navbar() {
 function Hero() {
   return (
     <section className="relative pt-28 md:pt-20 pb-24 bg-primary">
-      {/* DIAGNOSTIC: background overlay (image + circles) temporarily removed to test fullscreen */}
+      {/* Background image - pre-flipped horizontally, 80% transparency */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <img
+            src="/images/Charlice Cover Photo Flipped.jpg"
+            alt=""
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-accent/10" />
+        <div className="absolute bottom-12 -left-16 w-72 h-72 rounded-full bg-white/5" />
+      </div>
 
       <div className="relative max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         <div>
           {/* Mobile video - shows above headline on small screens */}
-          <div className="md:hidden mb-6">
+          <div className="md:hidden mb-6 rounded-2xl overflow-hidden">
             <video
-              className="w-full rounded-2xl"
+              className="w-full"
               src="/videos/byrd_budget.mp4"
               controls
               playsInline
@@ -99,7 +110,19 @@ function Hero() {
           </div>
         </div>
 
-        {/* DIAGNOSTIC: desktop video temporarily removed to test duplicate-video fullscreen hypothesis */}
+        {/* Candidate intro video */}
+        <div className="hidden md:flex justify-center items-start" style={{ marginTop: "-400px" }}>
+          <div className="w-full aspect-video rounded-2xl overflow-hidden bg-black/20 border-2 border-white/20">
+            <video
+              className="w-full h-full object-cover"
+              src="/videos/byrd_budget.mp4"
+              controls
+              playsInline
+              preload="metadata"
+              poster="/images/budget(3).png"
+            />
+          </div>
+        </div>
       </div>
     </section>
   );
