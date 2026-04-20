@@ -78,15 +78,17 @@ function Hero() {
       <div className="relative max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         <div>
           {/* Mobile video - shows above headline on small screens */}
-          <div className="md:hidden mb-6 rounded-2xl overflow-hidden">
-            <video
-              className="w-full"
-              src="/videos/byrd_budget.mp4"
-              controls
-              playsInline
-              preload="metadata"
-              poster="/images/budget(3).png"
-            />
+          <div className="md:hidden mb-6">
+            <div className="w-full rounded-2xl overflow-hidden border-2 border-neutral-mid">
+              <video
+                className="w-full h-full object-cover"
+                src="/videos/byrd_budget.mp4"
+                controls
+                playsInline
+                preload="metadata"
+                poster="/images/budget(3).png"
+              />
+            </div>
           </div>
 
           <p className="text-accent-light font-extrabold tracking-widest uppercase text-lg md:text-xl mb-3 text-center md:text-left" style={{ WebkitTextStroke: "2px var(--primary)", paintOrder: "stroke fill", textShadow: "0 0 8px rgba(0,0,0,0.6), 0 2px 4px rgba(0,0,0,0.4)" }}>
@@ -112,7 +114,7 @@ function Hero() {
 
         {/* Candidate intro video */}
         <div className="hidden md:flex justify-center items-start" style={{ marginTop: "-400px" }}>
-          <div className="w-full aspect-video rounded-2xl overflow-hidden bg-black/20 border-2 border-white/20">
+          <div className="w-full rounded-2xl overflow-hidden border-2 border-neutral-mid">
             <video
               className="w-full h-full object-cover"
               src="/videos/byrd_budget.mp4"
