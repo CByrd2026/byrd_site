@@ -238,7 +238,7 @@ function CharliceAndFani() {
                   />
                 </div>
               </a>
-              <p className="text-center text-foreground/70 mt-4">After demanding accountability, Charlice opposed the oversight commission designed to deliver it&mdash;demonstrating ensuring President Trump received her "NO" vote as well.</p>
+              <p className="text-center text-foreground/70 mt-4">After demanding accountability, Charlice opposed the oversight commission designed to deliver it&mdash;demonstrating her willingness to provide her "NO" vote to President Trump as well.</p>
             </div>
 
             {/* Vote Records - Two Column */}
@@ -270,7 +270,7 @@ function CharliceAndFani() {
           </div>
         </div>
 
-        <p className="text-center text-foreground/70 mt-8 max-w-3xl mx-auto font-bold">In two separate opportunities&mdash;SB 92 and HB 881&mdash;Charlice stood as the lone Republican to oppose the measure, she&apos;s a balanced leader who knows how keep favor with the Democrats and Fani Willis while continuing to prioritize disinformation to her base in support of her fundraising interests.</p>
+        <p className="text-center text-foreground/70 mt-8 max-w-3xl mx-auto font-bold">In two separate opportunities&mdash;SB 92 and HB 881&mdash;Charlice stood as the lone House Republican to oppose the measure, she&apos;s fought for Fani Willis while continuing to push disinformation to District 20 constituents in support of her fundraising interests.</p>
       </div>
     </section>
   );
