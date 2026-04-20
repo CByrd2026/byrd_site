@@ -78,9 +78,9 @@ function Hero() {
       <div className="relative max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         <div>
           {/* Mobile video - shows above headline on small screens */}
-          <div className="md:hidden mb-6">
+          <div className="md:hidden mb-6 rounded-2xl overflow-hidden">
             <video
-              className="w-full rounded-2xl"
+              className="w-full"
               src="/videos/byrd_budget.mp4"
               controls
               playsInline
