@@ -12,7 +12,7 @@ function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur text-white">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-primary text-white">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#" className="text-xl font-bold tracking-tight">
           Charlice Byrd <span className="text-accent-light font-extrabold text-sm ml-1" style={{ WebkitTextStroke: "1px var(--primary)", paintOrder: "stroke fill", textShadow: "0 0 8px rgba(0,0,0,0.6), 0 2px 4px rgba(0,0,0,0.4)" }}>&mdash; Bringing a Fringe Perspective to Cherokee County</span>
@@ -597,7 +597,7 @@ function AiBanner() {
   if (!visible) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 bg-white backdrop-blur text-primary px-6 py-4 shadow-[0_-4px_20px_rgba(0,0,0,0.15)] border-t border-neutral-mid">
+    <div className="fixed bottom-0 left-0 right-0 z-50 bg-white text-primary px-6 py-4 shadow-[0_-4px_20px_rgba(0,0,0,0.15)] border-t border-neutral-mid">
       <div className="max-w-6xl mx-auto flex items-center gap-4">
         <div className="flex-1 min-w-0">
           <p className="font-bold text-sm md:text-base text-primary">

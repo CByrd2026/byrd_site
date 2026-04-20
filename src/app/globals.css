@@ -33,3 +33,11 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* Ensure videos letterbox (not crop) when entering true fullscreen */
+video:fullscreen,
+video:-webkit-full-screen {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
