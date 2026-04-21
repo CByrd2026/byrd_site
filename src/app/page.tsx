@@ -76,11 +76,11 @@ function Hero() {
       </div>
 
       <div className="relative max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-        <div>
-          {/* Mobile video - shows above headline on small screens */}
-          <div className="md:hidden mb-6 rounded-2xl overflow-hidden">
+        {/* Single video — appears above text on mobile, right column on desktop */}
+        <div className="order-1 md:order-2 mb-6 md:mb-0 md:flex md:justify-center md:items-start md:-mt-[400px]">
+          <div className="w-full rounded-2xl overflow-hidden md:aspect-video md:bg-black/20 md:border-2 md:border-white/20">
             <video
-              className="w-full"
+              className="w-full h-full object-cover"
               src="/videos/byrd_budget.mp4"
               controls
               playsInline
@@ -88,7 +88,9 @@ function Hero() {
               poster="/images/budget(3).png"
             />
           </div>
+        </div>
 
+        <div className="order-2 md:order-1">
           <p className="text-accent-light font-extrabold tracking-widest uppercase text-lg md:text-xl mb-3 text-center md:text-left" style={{ WebkitTextStroke: "2px var(--primary)", paintOrder: "stroke fill", textShadow: "0 0 8px rgba(0,0,0,0.6), 0 2px 4px rgba(0,0,0,0.4)" }}>
             <em>Incumbent</em>{" "}Candidate &mdash; DISTRICT 20
           </p>
@@ -107,20 +109,6 @@ function Hero() {
             >
               See Charlice&apos;s Stance
             </a>
-          </div>
-        </div>
-
-        {/* Candidate intro video */}
-        <div className="hidden md:flex justify-center items-start" style={{ marginTop: "-400px" }}>
-          <div className="w-full aspect-video rounded-2xl overflow-hidden bg-black/20 border-2 border-white/20">
-            <video
-              className="w-full h-full object-cover"
-              src="/videos/byrd_budget.mp4"
-              controls
-              playsInline
-              preload="metadata"
-              poster="/images/budget(3).png"
-            />
           </div>
         </div>
       </div>
