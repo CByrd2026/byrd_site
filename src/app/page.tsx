@@ -206,6 +206,7 @@ function About() {
 
 /* ─── CHARLICE AND FANI ─── */
 function CharliceAndFani() {
+  const [lightboxSrc, setLightboxSrc] = useState<string | null>(null);
   return (
     <section id="fani" className="relative py-24 bg-white">
       {/* Background image */}
@@ -259,34 +260,46 @@ function CharliceAndFani() {
             {/* Vote Records - Two Column */}
             <div className="grid grid-cols-2 gap-6">
               {/* HB 881 Vote */}
-              <a href="https://www.legis.ga.gov/legislation/65965" target="_blank" rel="noopener noreferrer" className="block hover:opacity-80 transition-opacity">
-                <div className="w-full aspect-[3/4] rounded-2xl overflow-hidden border-2 border-neutral-mid bg-white">
-                  <img
-                    src="/images/AI_Deepfakes_Vote_HB881.png"
-                    alt="HB 881 House Vote Record"
-                    className="w-full h-full object-contain object-top"
-                  />
-                </div>
-                <p className="text-center text-sm font-bold text-primary mt-3 tracking-wide uppercase underline">HB 881</p>
-              </a>
+              <div>
+                <button type="button" onClick={() => setLightboxSrc("/images/AI_Deepfakes_Vote_HB881.png")} className="block w-full cursor-zoom-in hover:opacity-80 transition-opacity">
+                  <div className="w-full aspect-[3/4] rounded-2xl overflow-hidden border-2 border-neutral-mid bg-white">
+                    <img
+                      src="/images/AI_Deepfakes_Vote_HB881.png"
+                      alt="HB 881 House Vote Record"
+                      className="w-full h-full object-contain object-top"
+                    />
+                  </div>
+                </button>
+                <a href="https://www.legis.ga.gov/legislation/65965" target="_blank" rel="noopener noreferrer" className="block text-center text-sm font-bold text-accent hover:underline mt-3">HB 881</a>
+              </div>
 
               {/* SB 92 Vote */}
-              <a href="https://www.legis.ga.gov/legislation/64008" target="_blank" rel="noopener noreferrer" className="block hover:opacity-80 transition-opacity">
-                <div className="w-full aspect-[3/4] rounded-2xl overflow-hidden border-2 border-neutral-mid bg-white">
-                  <img
-                    src="/images/poc_house_vote_for_passage.png"
-                    alt="SB 92 House Vote Record"
-                    className="w-full h-full object-contain object-top"
-                  />
-                </div>
-                <p className="text-center text-sm font-bold text-primary mt-3 tracking-wide uppercase underline">SB 92</p>
-              </a>
+              <div>
+                <button type="button" onClick={() => setLightboxSrc("/images/poc_house_vote_for_passage.png")} className="block w-full cursor-zoom-in hover:opacity-80 transition-opacity">
+                  <div className="w-full aspect-[3/4] rounded-2xl overflow-hidden border-2 border-neutral-mid bg-white">
+                    <img
+                      src="/images/poc_house_vote_for_passage.png"
+                      alt="SB 92 House Vote Record"
+                      className="w-full h-full object-contain object-top"
+                    />
+                  </div>
+                </button>
+                <a href="https://www.legis.ga.gov/legislation/64008" target="_blank" rel="noopener noreferrer" className="block text-center text-sm font-bold text-accent hover:underline mt-3">SB 92</a>
+              </div>
             </div>
           </div>
         </div>
 
         <p className="text-center text-foreground/70 mt-8 max-w-3xl mx-auto font-bold">In two separate opportunities&mdash;SB 92 and HB 881&mdash;Charlice stood as the lone House Republican to oppose the measure, she&apos;s fought for Fani Willis while continuing to push disinformation to District 20 constituents in support of her fundraising interests.</p>
       </div>
+
+      {/* Lightbox Modal */}
+      {lightboxSrc && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4" onClick={() => setLightboxSrc(null)}>
+          <button type="button" className="absolute top-4 right-4 text-white text-4xl leading-none hover:opacity-70 transition-opacity" onClick={() => setLightboxSrc(null)} aria-label="Close">&times;</button>
+          <img src={lightboxSrc} alt="Enlarged vote record" className="max-w-full max-h-[90vh] object-contain rounded-lg" onClick={(e) => e.stopPropagation()} />
+        </div>
+      )}
     </section>
   );
 }
