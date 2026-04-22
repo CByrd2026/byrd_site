@@ -124,34 +124,61 @@ function About() {
         <h2 className="text-4xl font-extrabold text-primary mb-8 text-center tracking-tight">Meet the <span className="text-accent underline italic">REAL</span> Charlice</h2>
 
         {/* Four column image grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          <div className="rounded-lg overflow-hidden border-4 border-primary shadow-lg">
-            <img
-              src="/images/homeless_veteran_she.png"
-              alt="Homeless Veteran"
-              className="w-full h-full object-cover brightness-125"
-            />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mb-12">
+          <div className="flex flex-col items-center">
+            <div className="w-full aspect-[3/4] rounded-lg overflow-hidden border-4 border-primary shadow-lg">
+              <img
+                src="/images/homeless_veteran_she.png"
+                alt="Homeless Veteran"
+                className="w-full h-full object-cover brightness-125"
+              />
+            </div>
+            <p className="mt-2 text-sm font-semibold text-foreground text-center">She Voted <span className="font-bold italic underline uppercase">NO</span> to</p>
+            <a href="https://www.legis.ga.gov/legislation/72233" target="_blank" rel="noopener noreferrer" className="text-sm font-bold text-accent hover:underline">HB 973</a>
           </div>
-          <div className="rounded-lg overflow-hidden border-4 border-accent shadow-lg">
-            <img
-              src="/images/teacher_no.png"
-              alt="Teacher"
-              className="w-full h-full object-cover"
-            />
+          <div className="flex flex-col items-center">
+            <div className="w-full aspect-[3/4] rounded-lg overflow-hidden border-4 border-accent shadow-lg">
+              <img
+                src="/images/teacher_no.png"
+                alt="Teacher"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <p className="mt-2 text-sm font-semibold text-foreground text-center">She Voted <span className="font-bold italic underline uppercase">NO</span> to</p>
+            <a href="https://www.legis.ga.gov/legislation/73243" target="_blank" rel="noopener noreferrer" className="text-sm font-bold text-accent hover:underline">SB 515</a>
           </div>
-          <div className="rounded-lg overflow-hidden border-4 border-primary shadow-lg">
-            <img
-              src="/images/Family No.png"
-              alt="Family"
-              className="w-full h-full object-cover"
-            />
+          <div className="flex flex-col items-center">
+            <div className="w-full aspect-[3/4] rounded-lg overflow-hidden border-4 border-primary shadow-lg">
+              <img
+                src="/images/Family No.png"
+                alt="Family"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <p className="mt-2 text-sm font-semibold text-foreground text-center">She Voted <span className="font-bold italic underline uppercase">NO</span> to</p>
+            <a href="https://www.legis.ga.gov/legislation/72234" target="_blank" rel="noopener noreferrer" className="text-sm font-bold text-accent hover:underline">HB 974</a>
           </div>
-          <div className="rounded-lg overflow-hidden border-4 border-accent shadow-lg">
-            <img
-              src="/images/P_F_too.png"
-              alt="Public Figure"
-              className="w-full h-full object-cover"
-            />
+          <div className="flex flex-col items-center">
+            <div className="w-full aspect-[3/4] rounded-lg overflow-hidden border-4 border-accent shadow-lg">
+              <img
+                src="/images/abandoned_child_in_hospital.png"
+                alt="Abandoned Child in Hospital"
+                className="w-full h-full object-cover brightness-150"
+              />
+            </div>
+            <p className="mt-2 text-sm font-semibold text-foreground text-center">She Voted <span className="font-bold italic underline uppercase">NO</span> to</p>
+            <a href="https://www.legis.ga.gov/legislation/72959" target="_blank" rel="noopener noreferrer" className="text-sm font-bold text-accent hover:underline">HB 1238</a>
+          </div>
+          <div className="flex flex-col items-center">
+            <div className="w-full aspect-[3/4] rounded-lg overflow-hidden border-4 border-primary shadow-lg">
+              <img
+                src="/images/P_F_too.png"
+                alt="Public Figure"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <p className="mt-2 text-sm font-semibold text-foreground text-center">She Voted <span className="font-bold italic underline uppercase">NO</span> to</p>
+            <a href="https://www.legis.ga.gov/legislation/72234" target="_blank" rel="noopener noreferrer" className="text-sm font-bold text-accent hover:underline">HB 974</a>
           </div>
         </div>
 
