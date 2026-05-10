@@ -7,6 +7,7 @@ function Navbar() {
   const [open, setOpen] = useState(false); // still needed for mobile menu
   const links = [
     { label: "About", href: "#about" },
+    { label: "Follow the Money", href: "#funding" },
     { label: "Fani", href: "#fani" },
     { label: "Key \"No\" Votes", href: "#issues" },
   ];
@@ -598,6 +599,178 @@ function Issues() {
   );
 }
 
+/* ─── FOLLOW THE MONEY ─── */
+const topLawyers = [
+  { name: "Hendrick Cromartie", firm: "H L Cromartie III P.C.", amount: 2000 },
+  { name: "Glenn Kushel", firm: "Cunningham Bounds", amount: 2000 },
+  { name: "Katherine McArthur", firm: "McArthur Law Firm", amount: 2000 },
+  { name: "Michael Neff", firm: "Neff Injury Law", amount: 2000 },
+  { name: "James Rice", firm: "Rice Firm", amount: 2000 },
+  { name: "Curtis Dickinson", firm: "Dickinson Law", amount: 1000 },
+  { name: "John Ebersbach", firm: "KAM Ebersbach & Lewis PC", amount: 1000 },
+  { name: "Randy Ebersbach", firm: "KAM, Ebersbach & Lewis", amount: 1000 },
+  { name: "Chris Glover", firm: "Beasley Allen", amount: 1000 },
+  { name: "Michael Goldberg", firm: "Fried Goldberg LLC", amount: 1000 },
+  { name: "Andrew Jones", firm: "Self Employed", amount: 1000 },
+  { name: "Michael Prieto", firm: "PMHP Law", amount: 1000 },
+  { name: "Mike Moran", firm: "LawMoran", amount: 1000 },
+  { name: "Ranse Partin", firm: "Conley Griggs Partin", amount: 1000 },
+  { name: "Edward Piasta", firm: "Piasta Walker Hagenbush", amount: 1000 },
+  { name: "James Roth", firm: "The Roth Firm", amount: 1000 },
+  { name: "Joel Williams", firm: "Williams Elleby Howard & Easter", amount: 1000 },
+];
+
+const legalPacs = [
+  { name: "Civil Justice PAC, LLC", amount: 3000 },
+  { name: "Civil Justice PAC", amount: 3000 },
+  { name: "Beasley Allen", amount: 1000 },
+  { name: "Blasingame, Burch, Garrard & Ashley", amount: 1000 },
+  { name: "Chance Forlines Carter & King", amount: 1000 },
+  { name: "FriedGoldberg LLC", amount: 1000 },
+  { name: "Penn Law Group", amount: 1000 },
+  { name: "Freeman Mathis Decisions PAC", amount: 500 },
+];
+
+function Funding() {
+  const totalContributions = 78064;
+  const legalTotal = 34500;
+  const legalPercent = Math.round((legalTotal / totalContributions) * 100);
+  const lawyerTotal = 23000;
+  const pacTotal = 11500;
+  const civilJusticeTotal = 6000;
+
+  return (
+    <section id="funding" className="py-24 bg-white">
+      <div className="max-w-6xl mx-auto px-6">
+        <h2 className="text-4xl font-extrabold text-primary mb-2 text-center">
+          Follow the <span className="text-accent">Money</span>
+        </h2>
+        <div className="w-20 h-1 bg-accent rounded mx-auto mb-4" />
+        <p className="text-center text-foreground/60 max-w-3xl mx-auto mb-14">
+          Nearly half of Charlice&apos;s 2026 primary contributions come from trial lawyers and their affiliated PACs&mdash;the same legal industry that bankrolls opposition to tort reform, fights to keep insurance costs high, and opposes protections for small businesses. This isn&apos;t conservative funding.
+        </p>
+
+        {/* ── Big stat cards ── */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+          <div className="bg-neutral-light rounded-2xl p-6 text-center">
+            <p className="text-3xl md:text-4xl font-extrabold text-primary">${totalContributions.toLocaleString()}</p>
+            <p className="text-sm text-foreground/50 mt-1 font-medium">Total Raised</p>
+          </div>
+          <div className="bg-accent/10 rounded-2xl p-6 text-center border-2 border-accent/30">
+            <p className="text-3xl md:text-4xl font-extrabold text-accent">${legalTotal.toLocaleString()}</p>
+            <p className="text-sm text-foreground/50 mt-1 font-medium">From Legal Industry</p>
+          </div>
+          <div className="bg-accent/10 rounded-2xl p-6 text-center border-2 border-accent/30">
+            <p className="text-3xl md:text-4xl font-extrabold text-accent">{legalPercent}%</p>
+            <p className="text-sm text-foreground/50 mt-1 font-medium">Legal Industry Share</p>
+          </div>
+          <div className="bg-neutral-light rounded-2xl p-6 text-center">
+            <p className="text-3xl md:text-4xl font-extrabold text-primary">${civilJusticeTotal.toLocaleString()}</p>
+            <p className="text-sm text-foreground/50 mt-1 font-medium">Civil Justice PAC</p>
+          </div>
+        </div>
+
+        {/* ── Funding breakdown bar ── */}
+        <div className="mb-16">
+          <h3 className="text-xl font-bold text-primary mb-4 text-center">Where the Money Comes From</h3>
+          <div className="w-full h-10 rounded-full overflow-hidden flex bg-neutral-light border border-neutral-mid/40">
+            <div className="bg-accent h-full flex items-center justify-center text-white text-xs font-bold" style={{ width: "29.5%" }} title="Individual Lawyers: $23,000">
+              Lawyers 29%
+            </div>
+            <div className="bg-accent/70 h-full flex items-center justify-center text-white text-xs font-bold" style={{ width: "14.7%" }} title="Legal PACs & Firms: $11,500">
+              Legal PACs 15%
+            </div>
+            <div className="bg-primary h-full flex items-center justify-center text-white text-xs font-bold" style={{ width: "29.2%" }} title="Other Individuals: $22,805">
+              Individuals 29%
+            </div>
+            <div className="bg-primary-light h-full flex items-center justify-center text-white text-xs font-bold" style={{ width: "13.9%" }} title="Other Business/PACs: $10,850">
+              Biz/PACs 14%
+            </div>
+            <div className="bg-neutral-mid h-full flex items-center justify-center text-foreground/60 text-xs font-bold" style={{ width: "12.7%" }} title="Anonymous/Unitemized: $9,469 + In-Kind: $440">
+              Other 13%
+            </div>
+          </div>
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 mt-3 text-xs text-foreground/50">
+            <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-full bg-accent inline-block" />Individual Lawyers — ${lawyerTotal.toLocaleString()}</span>
+            <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-full bg-accent/70 inline-block" />Legal PACs &amp; Firms — ${pacTotal.toLocaleString()}</span>
+            <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-full bg-primary inline-block" />Other Individuals — $22,805</span>
+            <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-full bg-primary-light inline-block" />Other Biz/PACs — $10,850</span>
+            <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-full bg-neutral-mid inline-block" />Anonymous &amp; In-Kind — $9,909</span>
+          </div>
+        </div>
+
+        {/* ── Civil Justice PAC callout ── */}
+        <div className="bg-primary/5 border-2 border-primary/20 rounded-2xl p-8 mb-16">
+          <div className="flex flex-col md:flex-row gap-6 items-start">
+            <div className="shrink-0 w-14 h-14 rounded-xl bg-accent/10 text-accent flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
+              </svg>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-primary mb-2">The Civil Justice PAC Connection</h3>
+              <p className="text-foreground/70 leading-relaxed">
+                The Civil Justice PAC&mdash;Charlice&apos;s single largest funding source at <strong className="text-accent">$6,000</strong>&mdash;is the political arm of the Georgia Trial Lawyers Association (GTLA). This is the same PAC that was a major donor to <strong>Stacey Abrams</strong>&apos; gubernatorial campaigns. Trial lawyer PACs fund candidates who will oppose tort reform, block caps on lawsuit damages, and vote against protections for businesses and consumers. When Charlice votes against tort reform, insurance affordability, and small business protections, she&apos;s delivering exactly what her largest donors paid for.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* ── Two-column: Lawyers + PACs ── */}
+        <div className="grid md:grid-cols-2 gap-8">
+          {/* Individual Lawyers */}
+          <div className="bg-white rounded-2xl border border-neutral-mid/40 shadow-sm overflow-hidden">
+            <div className="bg-primary px-6 py-4">
+              <h3 className="text-lg font-bold text-white">Individual Trial Lawyers</h3>
+              <p className="text-white/60 text-sm">{topLawyers.length} attorneys &bull; ${lawyerTotal.toLocaleString()} total</p>
+            </div>
+            <div className="divide-y divide-neutral-mid/30">
+              {topLawyers.map((l) => (
+                <div key={l.name} className="px-6 py-3 flex items-center justify-between">
+                  <div>
+                    <p className="font-bold text-primary text-sm">{l.name}</p>
+                    <p className="text-xs text-foreground/50">{l.firm}</p>
+                  </div>
+                  <span className="text-sm font-extrabold text-accent">${l.amount.toLocaleString()}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Legal PACs & Firms */}
+          <div className="bg-white rounded-2xl border border-neutral-mid/40 shadow-sm overflow-hidden">
+            <div className="bg-primary px-6 py-4">
+              <h3 className="text-lg font-bold text-white">Legal PACs &amp; Law Firms</h3>
+              <p className="text-white/60 text-sm">{legalPacs.length} entities &bull; ${pacTotal.toLocaleString()} total</p>
+            </div>
+            <div className="divide-y divide-neutral-mid/30">
+              {legalPacs.map((p) => (
+                <div key={p.name} className="px-6 py-3 flex items-center justify-between">
+                  <p className="font-bold text-primary text-sm">{p.name}</p>
+                  <span className="text-sm font-extrabold text-accent">${p.amount.toLocaleString()}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* ── Why it matters ── */}
+        <div className="mt-16 text-center max-w-3xl mx-auto">
+          <h3 className="text-xl font-bold text-primary mb-4">Why It Matters</h3>
+          <p className="text-foreground/70 leading-relaxed">
+            Trial lawyers profit when lawsuit costs rise. They oppose tort reform because it limits their payouts. They fight insurance affordability measures because expensive claims mean bigger settlements. When a legislator&apos;s largest funding block is the trial bar, votes against tort reform, surprise billing protections, and insurance reform aren&apos;t principled conservatism&mdash;they&apos;re a return on investment.
+          </p>
+        </div>
+
+        {/* ── Source ── */}
+        <p className="text-center text-xs text-foreground/40 mt-12">
+          Source: Georgia Government Transparency &amp; Campaign Finance Commission &mdash; PeachFile contribution data, 2026 Primary cycle, downloaded 05/08/2026.
+        </p>
+      </div>
+    </section>
+  );
+}
+
 /* ─── FOOTER ─── */
 function Footer() {
   return (
@@ -669,6 +842,7 @@ export default function Page() {
       <Navbar />
       <Hero />
       <About />
+      <Funding />
       <CharliceAndFani />
       <Issues />
       <Footer />
